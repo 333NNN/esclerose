@@ -1,5 +1,5 @@
 import Head from "next/head";
-import Image from "next/image";
+
 import Profile from "@/src/components/profile/profile";
 import List from "@/src/components/list/list";
 import React from "react";
