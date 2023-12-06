@@ -6,7 +6,7 @@
 
 :root {
   --text-color: white;
-  --bg-url: url(/assets/bg-test1.jpg);
+  --bg-url: url(/assets/bg-dark.webp);
   --stroke-color: rgba(255, 255, 255, 0.5);
   --surface-color: rgba(255, 255, 255, 0.1);
   --surface-color-hover: rgba(0, 0, 0, 0.02);
@@ -16,7 +16,7 @@
 
 .light {
   --text-color: black;
-  --bg-url: url(/assets/bg-test1.jpg);
+  --bg-url: url(/assets/bg-test1.webp);
   --stroke-color: rgba(0, 0, 0, 0.5);
   --surface-color: rgba(0, 0, 0, 0.05);
   --surface-color-hover: rgba(0, 0, 0, 0.02);
@@ -39,8 +39,7 @@ body * {
 #container {
   width: 100%;
   max-width: 588px;
-
-  margin: 8px auto 0px;
+  margin: 0px auto 0px;
   padding: 0 24px;
 }
 
@@ -194,14 +193,14 @@ footer {
 
 @media (min-width: 700px) {
   :root {
-    --bg-url: url(/assets/bg-dark.jpg);
+    --bg-url: url(/assets/bg-dark.webp);
     background: var(--bg-url) no-repeat center center fixed;
     image-rendering: -webkit-optimize-contrast; /* Safari */
     image-rendering: optimizeQuality;
   }
 
   .light {
-    --bg-url: url(/assets/bg-test1.jpg);
+    --bg-url: url(/assets/bg-test1.webp);
     background: var(--bg-url) no-repeat center center fixed;
     image-rendering: -webkit-optimize-contrast; /* Safari */
     image-rendering: optimizeQuality;
