@@ -6,7 +6,7 @@ export default function List() {
           "Kodokushi" - Sala de Star | Mi Casa Estúdio
         </a>
       </li>
-      
+
       <li>
         <a href="https://esclerosepunk.bandcamp.com/" target="_blank">
           Bandcamp
