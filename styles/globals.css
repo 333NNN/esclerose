@@ -26,6 +26,8 @@
 
 body {
   /*background color mage repeat position/size*/
+  background: rgb(0,0,0);
+  background: linear-gradient(90deg, rgba(0,0,0,1) 1%, rgba(121,9,9,1) 30%, rgba(255,0,0,1) 100%);
   background: var(--bg-url) no-repeat top center/cover;
   background-attachment: fixed;
   height: 100vh;
