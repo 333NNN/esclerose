@@ -57,12 +57,26 @@ body * {
   margin-top: 8px;
 }
 
-#profile img {
+/* Procure por #profile img e as classes do avatar, e substitua por isso: */
+.avatar-profile {
   display: block;
   width: 112px;
+  height: 112px; /* Garante a proporção do Next.js Image */
   margin: auto;
   border-radius: 50%;
   outline: 1px solid var(--stroke-color);
+  
+  /* Efeito de inversão de cor instantâneo (Modo Escuro Padrão) */
+  filter: invert(0); 
+  transition: filter 0.3s ease;
+}
+
+.light .avatar-profile {
+  filter: invert(1); 
+}
+
+.light #switch button {
+  animation: slide-in 0.3s forwards;
 }
 
 /* /switch/ */
@@ -84,10 +98,6 @@ body * {
   z-index: 1;
   transform: translateY(-50%);
   animation: slide-out 0.3s;
-}
-
-.light #switch button {
-  animation: slide-in 0.3s forwards;
 }
 
 #switch button:hover {

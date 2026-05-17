@@ -1,15 +1,23 @@
-function toggleMode() {
-  const html = document.documentElement;
-  const img = document.querySelector("#profile img");
+import { useState, useEffect } from "react";
 
-  // Alternar a classe no elemento HTML
-  html.classList.toggle("light");
+export default function ToggleMode() {
+  // Começa no modo escuro (false)
+  const [isLight, setIsLight] = useState(false);
 
-  // Determinar qual imagem deve ser exibida com base na presença da classe "light"
-  const imageSrc = html.classList.contains("light")
-    ? "./assets/avatar2.webp"
-    : "./assets/avatar2-invert.webp";
+  // Esse efeito aplica a classe "light" na tag HTML principal do site de forma limpa
+  useEffect(() => {
+    const html = document.documentElement;
+    if (isLight) {
+      html.classList.add("light");
+    } else {
+      html.classList.remove("light");
+    }
+  }, [isLight]);
 
-  // Substituir a imagem do perfil
-  img.setAttribute("src", imageSrc);
+  return (
+    <div id="switch">
+      <button onClick={() => setIsLight(!isLight)} aria-label="Alternar tema"></button>
+      <span></span>
+    </div>
+  );
 }
