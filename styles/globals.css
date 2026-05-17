@@ -25,8 +25,11 @@
 }
 
 body {
-  /* Controla o fundo em uma única linha limpa */
-  background: var(--bg-url) no-repeat center center fixed;
+  background-color: #0b0b0b; /* Uma cor escura idêntica ao tom do seu background */
+  background-image: var(--bg-url);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-attachment: fixed;
   background-size: cover;
   min-height: 100vh;
 }
